@@ -1,0 +1,18 @@
+.page {
+    height: 100%;
+    width: 1440px;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+}
+.main {
+    flex: 1 1 auto;
+}
+.header {
+    text-align: center;
+    flex: 0 1 auto;
+}
+.footer {
+    text-align: center;
+    flex: 0 1 auto;
+}
