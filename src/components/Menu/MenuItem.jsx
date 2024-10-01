@@ -1,4 +1,4 @@
-import { Ingredient } from '../Ingredient/Ingredient.jsx';
+import { Ingredients } from '../Ingredients/Ingredients.jsx';
 import { useCount } from './use-count.js';
 
 export const MenuItem = ({ name, price, ingredients }) => {
@@ -10,7 +10,7 @@ export const MenuItem = ({ name, price, ingredients }) => {
             <button onClick={decrease}>-</button>
             <span>{counter}</span>
             <button onClick={increase}>+</button>
-            {Boolean(ingredients?.length) && <Ingredient ingredients={ingredients}/>}
+            {Boolean(ingredients?.length) && <Ingredients ingredients={ingredients}/>}
         </div>
     );
 }
