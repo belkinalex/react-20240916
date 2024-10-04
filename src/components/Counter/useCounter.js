@@ -1,17 +1,17 @@
 import { useState } from 'react';
 
 export const useCount = (initValue = 0) => {
-    const [counter, setCounter] = useState(initValue);
+    const [value, setValue] = useState(initValue);
 
     const increase = () => {
-        if (counter < 5) setCounter(counter + 1);
+        if (value < 5) setValue(value + 1);
     }
     const decrease = () => {
-        if (counter) setCounter(counter - 1);
+        if (value) setValue(value - 1);
     }
 
     return {
-        counter,
+        value,
         increase,
         decrease,
     }
