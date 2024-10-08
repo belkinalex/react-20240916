@@ -3,7 +3,7 @@ import { useReducer } from 'react';
 const DEFAULT_FORM_VALUE = {
     name: '',
     text: '',
-    rating: 0,
+    rating: 1,
 };
 const ACTION_TYPE = {
     SET_NAME: 'setName',
@@ -39,7 +39,7 @@ export const useForm = () => {
         if (rating < 5) dispatch({ type: ACTION_TYPE.SET_RATING, payload: rating + 1 });
     }
     const onDecreaseRating = () => {
-        if (rating > 0) dispatch({ type: ACTION_TYPE.SET_RATING, payload: rating - 1 });
+        if (rating > 1) dispatch({ type: ACTION_TYPE.SET_RATING, payload: rating - 1 });
     }
 
     return {
